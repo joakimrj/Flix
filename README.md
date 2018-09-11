@@ -2,7 +2,7 @@
 
 Flix is a movies app using the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
-Time spent: 16 hours spent in total
+Time spent: 18 hours spent in total
 
 ## User Stories
 
@@ -17,7 +17,7 @@ The following **stretch** user stories are implemented:
 
 - [X] User sees an alert when there's a networking error (+1pt)
 - [ ] User can search for a movie (+3pt)
-- [ ] While poster is being fetched, user see's a placeholder image (+1pt)
+- [X] While poster is being fetched, user see's a placeholder image (+1pt)
 - [ ] User sees image transition for images coming from network, not when it is loaded from cache (+1pt)
 - [ ] Customize the selection effect of the cell (+1pt)
 - [ ] For the large poster, load the low resolution image first and then switch to the high resolution image when complete (+2pt)
@@ -34,14 +34,13 @@ Please list two areas of the assignment you'd like to **discuss further with you
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+</br><a href="https://imgur.com/BQTNMlr"><img src="https://i.imgur.com/BQTNMlr.gif" title="source: imgur.com" /></a></br>
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+I had challenges with the table raws that didn´t want to set at right hight. 
 
 ## License
 
