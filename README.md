@@ -2,20 +2,20 @@
 
 **Name of your app** is a movies app using the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
-Time spent: **X** hours spent in total
+Time spent: 16 hours spent in total
 
 ## User Stories
 
 The following **required** user stories are complete:
 
-- [ ] User sees app icon in home screen and styled launch screen (+1pt)
-- [ ] User can scroll through a list of movies currently playing in theaters from The Movie DB API (+5pt)
-- [ ] User can "Pull to refresh" the movie list (+2pt)
-- [ ] User sees a loading state while waiting for the movies to load (+2pt)
+- [X] User sees app icon in home screen and styled launch screen (+1pt)
+- [X] User can scroll through a list of movies currently playing in theaters from The Movie DB API (+5pt)
+- [X] User can "Pull to refresh" the movie list (+2pt)
+- [X] User sees a loading state while waiting for the movies to load (+2pt)
 
 The following **stretch** user stories are implemented:
 
-- [ ] User sees an alert when there's a networking error (+1pt)
+- [X] User sees an alert when there's a networking error (+1pt)
 - [ ] User can search for a movie (+3pt)
 - [ ] While poster is being fetched, user see's a placeholder image (+1pt)
 - [ ] User sees image transition for images coming from network, not when it is loaded from cache (+1pt)
@@ -45,7 +45,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-Copyright [yyyy] [name of copyright owner]
+Copyright 2018 Joakim Jorde
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
