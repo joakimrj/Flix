@@ -40,7 +40,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+I had challenges with the table raws that didn´t want to set at right hight. 
 
 ## License
 
