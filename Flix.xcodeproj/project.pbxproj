@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		066049D82142CF820079421E /* NowPlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066049D72142CF820079421E /* NowPlayingViewController.swift */; };
 		06604A1C2145CC050079421E /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06604A1B2145CC050079421E /* MovieCell.swift */; };
+		0699DE93214967680039430A /* PosterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0699DE92214967680039430A /* PosterCell.swift */; };
+		0699DE95214968230039430A /* TopRatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0699DE94214968230039430A /* TopRatedViewController.swift */; };
 		06EE5E1521402D380003C21A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EE5E1421402D380003C21A /* AppDelegate.swift */; };
 		06EE5E1721402D380003C21A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EE5E1621402D380003C21A /* ViewController.swift */; };
 		06EE5E1A21402D380003C21A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06EE5E1821402D380003C21A /* Main.storyboard */; };
@@ -41,6 +43,8 @@
 /* Begin PBXFileReference section */
 		066049D72142CF820079421E /* NowPlayingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingViewController.swift; sourceTree = "<group>"; };
 		06604A1B2145CC050079421E /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		0699DE92214967680039430A /* PosterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterCell.swift; sourceTree = "<group>"; };
+		0699DE94214968230039430A /* TopRatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRatedViewController.swift; sourceTree = "<group>"; };
 		06EE5E1121402D380003C21A /* Flix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06EE5E1421402D380003C21A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06EE5E1621402D380003C21A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +130,8 @@
 				06EE5E1D21402D3A0003C21A /* LaunchScreen.storyboard */,
 				06EE5E2021402D3A0003C21A /* Info.plist */,
 				06604A1B2145CC050079421E /* MovieCell.swift */,
+				0699DE92214967680039430A /* PosterCell.swift */,
+				0699DE94214968230039430A /* TopRatedViewController.swift */,
 			);
 			path = Flix;
 			sourceTree = "<group>";
@@ -343,16 +349,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Flix/Pods-Flix-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
@@ -388,9 +390,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				06EE5E1721402D380003C21A /* ViewController.swift in Sources */,
+				0699DE93214967680039430A /* PosterCell.swift in Sources */,
 				066049D82142CF820079421E /* NowPlayingViewController.swift in Sources */,
 				06604A1C2145CC050079421E /* MovieCell.swift in Sources */,
 				06EE5E1521402D380003C21A /* AppDelegate.swift in Sources */,
+				0699DE95214968230039430A /* TopRatedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

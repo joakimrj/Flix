@@ -116,27 +116,62 @@
             </objects>
             <point key="canvasLocation" x="85.599999999999994" y="87.931034482758619"/>
         </scene>
-        <!--View Controller-->
+        <!--Top Rated View Controller-->
         <scene sceneID="iAJ-Xf-b7U">
             <objects>
-                <viewController id="VGf-RE-JfN" sceneMemberID="viewController">
+                <viewController id="VGf-RE-JfN" customClass="TopRatedViewController" customModule="Flix" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8eU-KB-RYr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VVB-AO-SUw">
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vPe-rm-sD3">
+                                    <size key="itemSize" width="172" height="239"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PosterCell" id="I6U-Nj-JKN" customClass="PosterCell" customModule="Flix" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="172" height="239"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="172" height="239"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kv3-Br-O1P">
+                                                    <rect key="frame" x="0.0" y="0.0" width="172" height="239"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <connections>
+                                            <outlet property="posterImageView" destination="Kv3-Br-O1P" id="CHC-NQ-jXX"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="B3P-O9-nGV"/>
                     </view>
                     <navigationItem key="navigationItem" id="Pk2-rj-4Z2"/>
+                    <connections>
+                        <outlet property="collectionView" destination="VVB-AO-SUw" id="ydi-Ca-g67"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6uJ-OC-616" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1029.5999999999999" y="785.46798029556658"/>
         </scene>
-        <!--Superhero-->
+        <!--Top Rated-->
         <scene sceneID="ptg-Mh-go2">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CHh-EJ-mFb" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Superhero" image="reel_tabbar_icon" id="IG2-OA-HfI"/>
+                    <tabBarItem key="tabBarItem" title="Top Rated" image="reel_tabbar_icon" id="IG2-OA-HfI"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LRG-MV-S9N">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>

@@ -104,10 +104,10 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
         cell.overviewLabel.text = overview
         
         if let posterPathString = movie["poster_path"] as? String {
-        let baseURLString = "https://image.tmdb.org/t/p/w500"
-        let posterURL = URL(string: baseURLString + posterPathString)!
-        let placeholderImage = UIImage(named: "placeholder")!
-        cell.posterImageView.af_setImage(withURL: posterURL, placeholderImage: placeholderImage)
+            let baseURLString = "https://image.tmdb.org/t/p/w500"
+            let posterURL = URL(string: baseURLString + posterPathString)!
+            let placeholderImage = UIImage(named: "placeholder")!
+            cell.posterImageView.af_setImage(withURL: posterURL, placeholderImage: placeholderImage)
         }
         else
         {
