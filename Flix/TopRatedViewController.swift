@@ -16,6 +16,16 @@ class TopRatedViewController: UIViewController, UICollectionViewDataSource {
         super.viewDidLoad()
 
         collectionView.dataSource = self
+        
+        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        layout.minimumInteritemSpacing = 5
+        layout.minimumLineSpacing = layout.minimumInteritemSpacing
+        let cellsPerLine: CGFloat = 2
+        let interItemSpaceingTotal = layout.minimumInteritemSpacing * (cellsPerLine-1)
+        let width = collectionView.frame.size.width / cellsPerLine - interItemSpaceingTotal/cellsPerLine
+        layout.itemSize = CGSize(width: width, height: width * 3/2)
+        
+        
         fetchMovies()
     }
     
