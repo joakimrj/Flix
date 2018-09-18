@@ -11,6 +11,7 @@
 		06604A1C2145CC050079421E /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06604A1B2145CC050079421E /* MovieCell.swift */; };
 		0699DE93214967680039430A /* PosterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0699DE92214967680039430A /* PosterCell.swift */; };
 		0699DE95214968230039430A /* TopRatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0699DE94214968230039430A /* TopRatedViewController.swift */; };
+		0699DE9B214F5E530039430A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0699DE9A214F5E530039430A /* DetailViewController.swift */; };
 		06EE5E1521402D380003C21A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EE5E1421402D380003C21A /* AppDelegate.swift */; };
 		06EE5E1721402D380003C21A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EE5E1621402D380003C21A /* ViewController.swift */; };
 		06EE5E1A21402D380003C21A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06EE5E1821402D380003C21A /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 		06604A1B2145CC050079421E /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		0699DE92214967680039430A /* PosterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterCell.swift; sourceTree = "<group>"; };
 		0699DE94214968230039430A /* TopRatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRatedViewController.swift; sourceTree = "<group>"; };
+		0699DE9A214F5E530039430A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		06EE5E1121402D380003C21A /* Flix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06EE5E1421402D380003C21A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06EE5E1621402D380003C21A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0699DE98214F5DF80039430A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				06604A1B2145CC050079421E /* MovieCell.swift */,
+				0699DE92214967680039430A /* PosterCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0699DE99214F5E020039430A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				06EE5E1621402D380003C21A /* ViewController.swift */,
+				066049D72142CF820079421E /* NowPlayingViewController.swift */,
+				0699DE94214968230039430A /* TopRatedViewController.swift */,
+				0699DE9A214F5E530039430A /* DetailViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		06EE5E0821402D380003C21A = {
 			isa = PBXGroup;
 			children = (
@@ -122,16 +144,13 @@
 		06EE5E1321402D380003C21A /* Flix */ = {
 			isa = PBXGroup;
 			children = (
+				0699DE99214F5E020039430A /* ViewController */,
+				0699DE98214F5DF80039430A /* View */,
 				06EE5E1421402D380003C21A /* AppDelegate.swift */,
-				06EE5E1621402D380003C21A /* ViewController.swift */,
-				066049D72142CF820079421E /* NowPlayingViewController.swift */,
 				06EE5E1821402D380003C21A /* Main.storyboard */,
 				06EE5E1B21402D3A0003C21A /* Assets.xcassets */,
 				06EE5E1D21402D3A0003C21A /* LaunchScreen.storyboard */,
 				06EE5E2021402D3A0003C21A /* Info.plist */,
-				06604A1B2145CC050079421E /* MovieCell.swift */,
-				0699DE92214967680039430A /* PosterCell.swift */,
-				0699DE94214968230039430A /* TopRatedViewController.swift */,
 			);
 			path = Flix;
 			sourceTree = "<group>";
@@ -395,6 +414,7 @@
 				06604A1C2145CC050079421E /* MovieCell.swift in Sources */,
 				06EE5E1521402D380003C21A /* AppDelegate.swift in Sources */,
 				0699DE95214968230039430A /* TopRatedViewController.swift in Sources */,
+				0699DE9B214F5E530039430A /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
