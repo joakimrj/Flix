@@ -11,4 +11,13 @@ import UIKit
 class PosterCell: UICollectionViewCell {
     
     @IBOutlet weak var posterImageView: UIImageView!
+    
+    var movie: Movie! {
+        didSet{
+            let placeholderImage = UIImage(named: "placeholder")!
+            posterImageView.af_setImage(withURL: movie.posterUrl!, placeholderImage: placeholderImage)
+        }
+        
+    }
 }
+

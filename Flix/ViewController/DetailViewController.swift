@@ -25,11 +25,22 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var overviewLable: UILabel!
     @IBOutlet weak var rateLable: UILabel!
     
-    var movie: [String: Any]?
+    //var movie: [String: Any]?
+    var movie: Movie?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let movie = movie {
+        if let movie = movie{
+            titlelable.text = movie.title
+            releaseDateLable.text = movie.releaseDate
+            overviewLable.text = movie.overview
+            rateLable.text = movie.rate
+            
+            let placeholderImage = UIImage(named: "placeholder")!
+            posterImageView.af_setImage(withURL: movie.posterUrl!, placeholderImage: placeholderImage)
+            backDropImageView.af_setImage(withURL: movie.backdropUrl!, placeholderImage: placeholderImage)
+        }
+     /*   if let movie = movie {
             titlelable.text = movie[MovieKeys.title] as? String
             releaseDateLable.text = movie[MovieKeys.releaseDate] as? String
             if let rate = movie[MovieKeys.rate] as? NSNumber{
@@ -51,7 +62,7 @@ class DetailViewController: UIViewController {
             posterImageView.af_setImage(withURL: posterURL)
             
         }
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view.*/
     }
 
     override func didReceiveMemoryWarning() {

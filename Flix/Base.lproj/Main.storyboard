@@ -273,11 +273,11 @@
             </objects>
             <point key="canvasLocation" x="1972" y="785.46798029556658"/>
         </scene>
-        <!--Top Rated-->
+        <!--Popular-->
         <scene sceneID="ptg-Mh-go2">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CHh-EJ-mFb" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Top Rated" image="reel_tabbar_icon" id="IG2-OA-HfI"/>
+                    <tabBarItem key="tabBarItem" title="Popular" image="reel_tabbar_icon" id="IG2-OA-HfI"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LRG-MV-S9N">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
